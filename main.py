@@ -41,8 +41,8 @@ def set_user():
 	mydb.commit()
 
 	return make_response(jsonify(	erro = '0',
-									msg = 'sucess',
-									key = hashresult)
+					msg = 'sucess',
+					key = hashresult)
 	)
 
 @app.route('/stores', methods=['GET'])
@@ -62,8 +62,8 @@ def get_store():
 			}
 		)
 	return make_response(jsonify(	erro = '0',
-									msg = '',
-									data = stores)
+					msg = '',
+					data = stores)
 	)
 
 @app.route('/stores', methods=['POST'])
@@ -109,8 +109,8 @@ def get_product():
 			}
 		)
 	return make_response(jsonify(	erro = '0',
-									msg = '',
-									data = products)
+					msg = '',
+					data = products)
 	)
 
 @app.route('/products', methods=['POST'])
@@ -128,20 +128,20 @@ def set_product():
 	mydb.commit()
 
 	return make_response(jsonify(	erro = '0',
-									msg = 'sucess')
+					msg = 'sucess')
 	)
 
 @app.route('/test', methods=['GET'])
 def get_test():
 	return make_response(jsonify(	erro = '0',
-									msg = 'Test with GET sucess')
+					msg = 'Test with GET sucess')
 	)
 
 @app.route('/test', methods=['POST'])
 def set_test():
 	json = request
 	return make_response(jsonify(	erro = '0',
-									msg = 'Test with POST sucess')
+					msg = 'Test with POST sucess')
 	)
 
 # Starting the server 
