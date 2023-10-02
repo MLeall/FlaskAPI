@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>API TOUR</h1>
+    <div style="height: 2px; background-color: red; width: 40%; margin-left: auto; margin-right: auto;"></div>
+    <p>This is a simple page to make it easier to interact with API verbs. Let's get started selecting one of the following routes. GET returns won't be decorated to preserve the json structure. UPDATE and DELETE coming soon.</p>
+    <h2>GET</h2>
+    <div class="routes_holder">
+        <a href="{{ url_for('get_user') }}">USERS</a>
+        <a href="{{ url_for('get_product') }}">PRODUCTS</a>
+        <a href="{{ url_for('get_store') }}">STORES</a>
+    </div>
+    <h2>POST</h2>
+    <div class="routes_holder">
+        <a href="{{ url_for('form_user') }}">USERS</a>
+        <a href="{{ url_for('form_product') }}">PRODUCTS</a>
+        <a href="{{ url_for('form_store') }}">STORES</a>
+    </div>
+{% endblock %}

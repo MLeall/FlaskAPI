@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 style="margin-top: 40px;">USER POST FORM</h1>
+<form style="width: 85%; margin: 70px auto 40px auto;" method="POST" action="set_user">
+    <div class="form-group" style="margin-bottom: 20px;">
+      <label for="formGroupExampleInput">User name</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">User email</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="sample@mail.com" name="email">
+    </div>
+    <button type="submit" class="btn btn-secondary" style="margin-top: 40px;">Post</button>
+</form>
+{% endblock %}

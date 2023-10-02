@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 style="margin-top: 40px;">PRODUCT POST FORM</h1>
+<form style="width: 85%; margin: 70px auto 40px auto;" method="POST" action="set_product">
+    <div class="form-group" style="margin-bottom: 20px;">
+      <label for="formGroupExampleInput">Store name</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Store name" name="store_name">
+    </div>
+    <div class="form-group" style="margin-bottom: 20px;">
+      <label for="formGroupExampleInput2">Product name</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Product name" name="product_name">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Product price</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="9.99" name="price" pattern="\d+(\.\d{1,2})?" required>
+    </div>
+    <button type="submit" class="btn btn-secondary" style="margin-top: 40px;">Post</button>
+</form>
+{% endblock %}
